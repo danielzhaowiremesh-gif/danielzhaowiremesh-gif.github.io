@@ -3,133 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>质量管理体系认证证书</title>
+    <title>获证组织信息验证平台</title>
     <style>
-        body {
-            font-family: "Microsoft Yahei", sans-serif;
-            background-color: #f0f0f0;
+        * {
             margin: 0;
-            padding: 20px;
-        }
-        .certificate {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
         }
         .header {
+            background: #ffffff;
+            padding: 20px 30px;
             display: flex;
             align-items: center;
-            border-bottom: 2px solid #0066cc;
-            padding-bottom: 15px;
-            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
         }
         .logo {
-            width: 60px;
-            height: 60px;
-            background: #0066cc;
-            border-radius: 50%;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 28px;
-            font-weight: bold;
-            margin-right: 15px;
+            width: 120px;
+            height: 120px;
+            margin-right: 20px;
+        }
+        .company-info {
+            flex-grow: 1;
         }
         .company-info h1 {
-            font-size: 24px;
-            margin: 0;
+            font-size: 42px;
             color: #333;
+            margin-bottom: 8px;
         }
         .company-info p {
-            margin: 5px 0 0;
-            color: #666;
-            font-size: 14px;
+            font-size: 24px;
+            color: #555;
+            font-style: italic;
         }
         .slogan {
-            margin-left: auto;
-            color: #666;
-            font-size: 14px;
+            font-size: 22px;
+            color: #4472c4;
+            font-weight: 500;
+        }
+        .cert-body {
+            background: #333333;
+            color: #ffffff;
+            padding: 30px;
+            min-height: calc(100vh - 162px);
         }
         .status {
             text-align: right;
-            font-size: 28px;
-            color: #2e8b57;
-            font-weight: bold;
+            font-size: 22px;
             margin-bottom: 30px;
         }
-        .info-item {
-            margin: 15px 0;
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .info-item label {
+        .status .valid {
+            color: #34c759;
             font-weight: bold;
-            color: #333;
+        }
+        .info-item {
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 8px 0;
         }
         .query-section {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
+            margin-top: 30px;
         }
         .query-section p {
-            margin: 10px 0;
-            font-size: 16px;
+            font-size: 18px;
+            line-height: 1.8;
+            margin: 8px 0;
         }
         .query-section a {
-            color: #0066cc;
+            color: #ffffff;
             text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <div class="certificate">
-        <div class="header">
-            <div class="logo">H</div>
-            <div class="company-info">
-                <h1>华亿认证中心有限公司</h1>
-                <p>HUAYI CERTIFICATION CENTER CO., LTD.</p>
-            </div>
-            <div class="slogan">公正权威 传递信任 增值服务 持续改进</div>
+    <div class="header">
+    <div class="logo">
+        <img src="logo.png" alt="华亿认证中心Logo" width="120" height="120">
+    </div>
+        <div class="company-info">
+            <h1>华亿认证中心有限公司</h1>
+            <p>HUAYI CERTIFICATION CENTER CO., LTD.</p>
         </div>
-
-        <div class="status">证书状态：有效</div>
-
-        <div class="info-item">
-            <label>获证组织名称：</label>济南金拓国际贸易有限公司
-        </div>
-        <div class="info-item">
-            <label>证书编号：</label>41924Q10269-03R0S
-        </div>
-        <div class="info-item">
-            <label>认证标准：</label>GB/T 19001-2016/ISO9001:2015
-        </div>
-        <div class="info-item">
-            <label>认证领域：</label>质量管理体系
-        </div>
-        <div class="info-item">
-            <label>认证范围：</label>铁丝、铁丝网、防护网的生产
-        </div>
-        <div class="info-item">
-            <label>企业地址：</label>山东省济南市高新区舜华路街道经十路7000号汉峪金融商务中心A2-3-1507室
-        </div>
-        <div class="info-item">
-            <label>有效截止日期：</label>2027-03-20
-        </div>
-        <div class="info-item">
-            <label>认证机构名称：</label>华亿认证中心有限公司
-        </div>
+        <div class="slogan">公正权威 传递信任 增值服务 持续改进</div>
+    </div>
+    <div class="cert-body">
+        <div class="status">证书状态：<span class="valid">有效</span></div>
+        
+        <div class="info-item">获证组织名称：济南金拓国际贸易有限公司</div>
+        <div class="info-item">证书编号：41924Q10269-03R0S</div>
+        <div class="info-item">认证标准：GB/T 19001-2016/ISO9001:2015</div>
+        <div class="info-item">认证领域：质量管理体系</div>
+        <div class="info-item">认证范围：铁丝、铁丝网、防护网的生产</div>
+        <div class="info-item">企业地址：山东省济南市高新区舜华路街道经十路7000号汉峪金融商务中心A2-3-1507室</div>
+        <div class="info-item">有效截止日期：2027-03-20</div>
+        <div class="info-item">认证机构名称：华亿认证中心有限公司</div>
 
         <div class="query-section">
             <p>认证证书有效性的进一步查询可登录：</p>
-            <p><label>认证机构网站</label></p>
+            <p>认证机构网站</p>
             <p><a href="http://www.hyrzzx.com/">http://www.hyrzzx.com/</a></p>
-            <p><label>联系电话</label></p>
+            <p>联系电话</p>
             <p>028-83221100 (全国免费热线)</p>
-            <p><label>中国国家认证认可监督管理委员会网站</label></p>
+            <p>中国国家认证认可监督管理委员会网站</p>
             <p><a href="https://www.cnca.gov.cn">www.cnca.gov.cn</a></p>
         </div>
     </div>
